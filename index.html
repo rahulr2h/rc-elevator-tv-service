@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>R.C ELEVATOR AND TV SERVICE</title>
+<style>
+body{font-family:Arial,sans-serif;background:#f4f4f4;margin:0;padding:0}
+.header{background:#111;color:#fff;text-align:center;padding:20px}
+.container{max-width:800px;margin:20px auto;background:#fff;padding:20px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.1)}
+input,select,textarea,button{width:100%;padding:12px;margin:8px 0;border:1px solid #ccc;border-radius:8px}
+button{background:#111;color:#fff;border:none}
+.footer{background:#111;color:#fff;text-align:center;padding:16px;margin-top:20px}
+a{color:#2563eb}
+</style>
+</head>
+<body>
+<div class="header">
+<h1>R.C ELEVATOR AND TV SERVICE</h1>
+<p>24x7 Emergency Support Available</p>
+</div>
+<div class="container">
+<h2>Complaint Form</h2>
+<form onsubmit="sendWhatsApp(); return false;">
+<input id="name" placeholder="Your Name" required>
+<input id="phone" placeholder="Mobile Number" required>
+<select id="service">
+<option>Elevator Repair</option>
+<option>TV Repair</option>
+</select>
+<input id="address" placeholder="Full Address" required>
+<textarea id="problem" placeholder="Problem Details" required></textarea>
+<button type="submit">Submit Complaint</button>
+</form>
+<h3>Contact Details</h3>
+<p><strong>WhatsApp:</strong> 919587972561</p>
+<p><strong>Email:</strong> rahulr2h@gmail.com</p>
+<p><strong>Address:</strong> Kaushalya Das Ji Ki Bagichi, Ram Mandir, Bani Park, Jaipur</p>
+<p><strong>Instagram:</strong> <a href="https://www.instagram.com/reaction_boi_rohan?igsh=NGJ5bDMzeWxiZmIx" target="_blank">Follow Here</a></p>
+</div>
+<div class="footer">© 2026 R.C ELEVATOR AND TV SERVICE | Jaipur</div>
+<script>
+function sendWhatsApp(){
+ let msg = "New Complaint:%0A"
+ + "Name: " + document.getElementById("name").value + "%0A"
+ + "Phone: " + document.getElementById("phone").value + "%0A"
+ + "Service: " + document.getElementById("service").value + "%0A"
+ + "Address: " + document.getElementById("address").value + "%0A"
+ + "Problem: " + document.getElementById("problem").value;
+ window.open("https://wa.me/919587972561?text=" + msg, "_blank");
+}
+</script>
+</body>
+</html>
